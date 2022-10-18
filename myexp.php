@@ -82,7 +82,7 @@ if(isset($_POST['submit']))
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">My Experience</h1>
 
-<p style="font-size:16px; color:red" align="center"> <?php if($msg){
+<p style="font-size:16px; color:green" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
 
@@ -94,7 +94,7 @@ if($row>0)
 {
 
 ?>
-<p style="font-size:16px; color:red" align="center">Your Experience details already added. Now you can only edit the record. </p>
+<p style="font-size:16px; color:green" align="center">Your Experience details already added. Now you can only view the record. </p>
 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 
 <tr>
@@ -178,7 +178,7 @@ if($row>0)
                       <input type="text" class="form-control form-control-user" id="emp1workduration" name="emp1workduration" aria-describedby="emailHelp" value="">
                     </div></div>
                     <div class="row">
-                <div class="col-4 mb-3">Employer 2 Name</div>
+                <div class="col-4 mb-3">Employer 2 Name (company name)</div>
                    <div class="col-8 mb-3">   <input type="text" class="form-control form-control-user" id="emp2name" name="emp2name" aria-describedby="emailHelp" value=""></div>
                     </div>  
                     <div class="row">
@@ -200,7 +200,7 @@ if($row>0)
                       <input type="text" class="form-control form-control-user" id="emp2workduration" name="emp2workduration" aria-describedby="emailHelp" value="">
                     </div></div>
                     <div class="row">
-                <div class="col-4 mb-3">Employer Name</div>
+                <div class="col-4 mb-3">Employer 3 Name (company name)</div>
                    <div class="col-8 mb-3">   <input type="text" class="form-control form-control-user" id="emp3name" name="emp3name" aria-describedby="emailHelp" value=""></div>
                     </div>  
                     <div class="row">

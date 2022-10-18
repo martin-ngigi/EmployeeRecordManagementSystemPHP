@@ -86,7 +86,7 @@ if(isset($_POST['submit']))
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">My Education</h1>
 
-<p style="font-size:16px; color:red" align="center"> <?php if($msg){
+<p style="font-size:16px; color:green" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
 
@@ -100,7 +100,7 @@ if($row>0)
 {
 
 ?>
-<p style="font-size:16px; color:red" align="center">Your Education details already added. Now you can only edit the record. </p>
+<p style="font-size:16px; color:green" align="center">Your Education details already added. Now you can only view the record. </p>
 
 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 

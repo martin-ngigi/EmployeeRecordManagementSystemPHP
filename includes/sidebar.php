@@ -35,13 +35,7 @@
       <li class="nav-item">
         <a class="nav-link" href="myexp.php">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>My Exp</span></a>
-      </li>
-      
-       <li class="nav-item">
-        <a class="nav-link" href="editmyexp.php">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Edit my Exp</span></a>
+          <span>My Experience</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
@@ -50,11 +44,7 @@
           <i class="fas fa-fw fa-table"></i>
           <span>My Education</span></a>
       </li>
-<li class="nav-item">
-        <a class="nav-link" href="editmyeducation.php">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Edit My Education</span></a>
-      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
