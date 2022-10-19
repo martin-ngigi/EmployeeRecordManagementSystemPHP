@@ -45,6 +45,13 @@
           <span>My Education</span></a>
       </li>
 
+      <!-- Nav Item - Tables  Leave Request -->
+      <li class="nav-item">
+        <a class="nav-link" href="myleave.php">
+          <i class="fas fa-fw fa-table"></i>
+          <span> Leave Request </span></a>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 

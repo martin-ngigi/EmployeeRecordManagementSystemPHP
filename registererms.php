@@ -105,14 +105,11 @@ return true;
                   <div class="col-sm-6">
                     <input type="password" class="form-control form-control-user" id="RepeatPassword" name="RepeatPassword" placeholder="Repeat Password" required="true">
                   </div>
-                 
                 </div>
-
 
               <input type="submit" name="submit" value="Register Account" class="btn btn-primary btn-user btn-block">
                 
-                
-                </form>
+              </form>
                 <hr>
              
               <div class="text-center">
