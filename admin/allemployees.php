@@ -104,6 +104,7 @@ while ($row=mysqli_fetch_array($ret)) {
   <td><a href="editempprofile.php?editid=<?php echo $row['ID'];?>">Edit Profile Details</a> | 
    <a href="editempeducation.php?editid=<?php echo $row['ID'];?>">Edit Education Details</a> |
     <a href="editempexp.php?editid=<?php echo $row['ID'];?>">Edit Experience Details</a>  |
+    <a href="updateleavestatus.php?editid=<?php echo $row['ID'];?>">Update Leave Status</a>  |
     <a href="allemployees.php?delid=<?php echo $row['ID'];?>" onclick="return confirm('Do you really want to delete <?php echo $row['EmpCode']?>?');" style="color:red">Delete</a>
   </td>
 </tr>
