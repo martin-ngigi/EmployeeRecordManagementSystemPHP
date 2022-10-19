@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 17, 2020 at 05:21 PM
--- Server version: 10.3.15-MariaDB
--- PHP Version: 7.2.19
+-- Generation Time: Oct 19, 2022 at 07:18 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -98,7 +97,8 @@ INSERT INTO `empexpireince` (`ID`, `EmpID`, `Employer1Name`, `Employer1Designati
 (10, '12', 'dfg.pvt.ltd', 'accountant', '25000 p/m', '1 yrs', 'fghpvt.ltd', 'accountant', '30000 p/m', '3 yrs', 'fghpvt.ltd', 'accountant', '45000 p/m', '5 yrs till'),
 (11, '13', 'ABC', 'Developer', '12000 ', '2 years', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA'),
 (12, '1', '', '', '', '', '', '', '', '', '', '', '', ''),
-(13, '14', 'ABC Tech', 'Jr Devloper', '1258000', '6 Month', 'XYZ Tech', 'Devloper', '2589300', '6 Month', 'It Tech', 'Sr Devloper', '853214447', '2 + Years');
+(13, '14', 'ABC Tech', 'Jr Devloper', '1258000', '6 Month', 'XYZ Tech', 'Devloper', '2589300', '6 Month', 'It Tech', 'Sr Devloper', '853214447', '2 + Years'),
+(14, '15', 'Old Mutual', 'SW Dev', '90000', '18', 'Britam', 'SW Dev', '95000', '24', 'CIC', 'SW Dev', '100000', '12');
 
 -- --------------------------------------------------------
 
@@ -138,7 +138,35 @@ INSERT INTO `employeedetail` (`ID`, `EmpFname`, `EmpLName`, `EmpCode`, `EmpDept`
 (11, 'SARITA', 'pANDEY', '789', NULL, NULL, NULL, NULL, 'PANDEY@GMAIL.COM', '1111', NULL, '2019-02-11 08:50:55'),
 (12, 'Dinesh', 'Karthik', '56989', NULL, NULL, NULL, NULL, 'dinesh@gmail.com', '8989', NULL, '2019-02-11 12:30:50'),
 (13, 'Test', 'User', '2131231', 'IT', 'Software Developer', 1234567890, 'Male', 'testuser@gmail.com', 'Test@123', '2018-10-09', '2019-02-11 16:21:58'),
-(14, 'Anuj', 'Kumar', '1023647885', 'IT', 'Software Developer', 1234567890, 'Male', 'aktest@gmail.com', 'Test@123', '2019-01-01', '2020-02-19 16:58:51');
+(14, 'Anuj', 'Kumar', '1023647885', 'IT', 'Software Developer', 1234567890, 'Male', 'aktest@gmail.com', 'Test@123', '2019-01-01', '2020-02-19 16:58:51'),
+(15, 'Martin', 'Wainaina', '52428', NULL, NULL, NULL, NULL, 'martinwainaina002@gmail.com', '123456', NULL, '2022-10-18 17:00:04');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employeeleave`
+--
+
+CREATE TABLE `employeeleave` (
+  `ID` int(11) NOT NULL,
+  `EmpID` varchar(40) DEFAULT NULL,
+  `EmpFName` varchar(40) DEFAULT NULL,
+  `EmpLName` varchar(40) DEFAULT NULL,
+  `EmpCode` varchar(40) DEFAULT NULL,
+  `StartOfLeave` varchar(40) DEFAULT NULL,
+  `EndOfLeave` varchar(40) DEFAULT NULL,
+  `LeaveReason` varchar(40) DEFAULT NULL,
+  `LeaveStatus` varchar(40) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `employeeleave`
+--
+
+INSERT INTO `employeeleave` (`ID`, `EmpID`, `EmpFName`, `EmpLName`, `EmpCode`, `StartOfLeave`, `EndOfLeave`, `LeaveReason`, `LeaveStatus`) VALUES
+(7, '15', 'Martin', 'Wainaina', '52428', '2022-10-21', '2022-11-03', 'Medical leave', 'Disapproved'),
+(8, '15', 'Martin', 'Wainaina', '52428', '2022-10-27', '2022-10-26', 'Medical leave', 'Approved'),
+(9, '15', 'Martin', 'Wainaina', '52428', '2022-11-15', '2022-11-23', 'Medical leave', 'Disapproved');
 
 -- --------------------------------------------------------
 
@@ -185,6 +213,12 @@ ALTER TABLE `employeedetail`
   ADD UNIQUE KEY `EmpCode` (`EmpCode`);
 
 --
+-- Indexes for table `employeeleave`
+--
+ALTER TABLE `employeeleave`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indexes for table `tbladmin`
 --
 ALTER TABLE `tbladmin`
@@ -204,13 +238,19 @@ ALTER TABLE `empeducation`
 -- AUTO_INCREMENT for table `empexpireince`
 --
 ALTER TABLE `empexpireince`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `employeedetail`
 --
 ALTER TABLE `employeedetail`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `employeeleave`
+--
+ALTER TABLE `employeeleave`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tbladmin`
