@@ -52,6 +52,13 @@
           <span> Leave Request </span></a>
       </li>
 
+            <!-- Nav Item - Comment -->
+      <li class="nav-item">
+        <a class="nav-link" href="mycomment.php">
+          <i class="fas fa-fw fa-table"></i>
+          <span> Send a Comment </span></a>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 

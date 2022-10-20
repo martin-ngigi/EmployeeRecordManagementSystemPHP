@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2022 at 07:18 PM
+-- Generation Time: Oct 20, 2022 at 06:14 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -99,6 +99,30 @@ INSERT INTO `empexpireince` (`ID`, `EmpID`, `Employer1Name`, `Employer1Designati
 (12, '1', '', '', '', '', '', '', '', '', '', '', '', ''),
 (13, '14', 'ABC Tech', 'Jr Devloper', '1258000', '6 Month', 'XYZ Tech', 'Devloper', '2589300', '6 Month', 'It Tech', 'Sr Devloper', '853214447', '2 + Years'),
 (14, '15', 'Old Mutual', 'SW Dev', '90000', '18', 'Britam', 'SW Dev', '95000', '24', 'CIC', 'SW Dev', '100000', '12');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employeecomment`
+--
+
+CREATE TABLE `employeecomment` (
+  `ID` int(11) NOT NULL,
+  `EmpID` varchar(40) DEFAULT NULL,
+  `EmpFName` varchar(40) DEFAULT NULL,
+  `EmpLName` varchar(40) DEFAULT NULL,
+  `EmpCode` varchar(40) DEFAULT NULL,
+  `Comment` varchar(40) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `employeecomment`
+--
+
+INSERT INTO `employeecomment` (`ID`, `EmpID`, `EmpFName`, `EmpLName`, `EmpCode`, `Comment`) VALUES
+(1, '15', 'Martin', 'Wainaina', '52428', 'Hello its Martin.'),
+(2, '15', 'Martin', 'Wainaina', '52428', 'hey'),
+(3, '15', 'Martin', 'Wainaina', '52428', 'hey');
 
 -- --------------------------------------------------------
 
@@ -206,6 +230,12 @@ ALTER TABLE `empexpireince`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexes for table `employeecomment`
+--
+ALTER TABLE `employeecomment`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indexes for table `employeedetail`
 --
 ALTER TABLE `employeedetail`
@@ -239,6 +269,12 @@ ALTER TABLE `empeducation`
 --
 ALTER TABLE `empexpireince`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `employeecomment`
+--
+ALTER TABLE `employeecomment`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `employeedetail`

@@ -37,6 +37,14 @@
           <i class="fas fa-fw fa-chart-area"></i>
           <span>All Employees</span></a>
       </li>
+
+        <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="comments.php">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>All Comments</span></a>
+      </li>
+      
       
     
 
